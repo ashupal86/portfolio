@@ -8,7 +8,7 @@ def index():
 
 @app.route('/resume')
 def resume():
-    return send_from_directory('static', 'resume.txt')
+    return send_from_directory('static', 'AshishPal_resume.pdf')
 
 @app.route('/dashboard')
 def dashboard():
