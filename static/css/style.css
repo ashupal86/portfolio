@@ -1,0 +1,323 @@
+body{
+    background-color: #1C1C1C;
+    color: #B89076;
+    font-family: 'Courier New', Courier, monospace;
+    
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.main>.banner{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    font-style:oblique;
+
+}
+.banner3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   
+    padding: 1vh 1vh 1vw 1vh;
+    font-size: 1.5vh;
+    
+
+}
+.banner3>.ascii{
+    margin-top: 10%;
+    justify-content: center;
+    line-height: 1.5vh;
+    height: 100%;
+    /* border: 1px solid white; */
+ 
+}
+.banner3>.details{
+    font-size: .7rem;
+    width: 50%;
+    color: white;
+    /* border: 1px solid white; */
+    text-align: start;
+    margin-left: 2vw;
+}
+.banner3>.details>p{
+    display: flex;
+    flex-direction: row;
+    
+    /* border: 1px solid white; */
+  
+   
+}
+
+.banner3>.details>h2{
+    color: #519975;
+    width: fit-content;
+    align-self: center;
+    border-bottom: 1px solid white;
+    font-weight: bolder;
+    font-style:oblique;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50vw;
+    height: 90vh;
+    border: 2px  white dashed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.main::-webkit-scrollbar{
+    display: none;
+}
+.terminal{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid white; */
+    padding-left: 2vw;
+    
+
+}
+form{
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: start;
+}
+form>input{
+    width: 100%;
+    height: 3vh;
+    background-color: #1C1C1C;
+    color: #73ABAD;
+    text-shadow: 0 0 5px #73ABAD;
+    border: none;
+    outline: none;
+}
+form>input{
+    color: #73ABAD;
+    text-shadow: 0 0 5px #73ABAD;
+}
+.cmd{
+    color: #73ABAD;
+    text-shadow: 0 0 5px #73ABAD;
+}
+.text{
+    color: #B89076;
+}
+.head{
+    color:#ffffff;
+    font-size: 1.2rem ;
+    font-weight: bolder;
+}
+.red{
+    font-size: 1rem;
+    color: #E95420;
+}
+.red>a{
+    text-decoration: none;
+    color: #519975;
+}
+.link{
+    text-decoration: none;
+    color: #519975;
+}
+.white{
+    color: white;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main {
+        width: 40vh;
+        
+    }
+
+    .main>.banner>pre {
+        font-size: 2rem;
+    }
+
+    .banner2>p {
+        font-size: 1.5rem;
+    }
+    .banner3{
+        align-items: center;
+        flex-direction: column;
+        
+    padding: 0px 0px 0px 0px;}
+    .banner3>.ascii{
+        line-height: .9vh;
+        font-size: 1rem;
+    }
+    .banner3>.details{
+        font-size: .5rem;
+        width: 90%;
+        margin-left: 1vw;
+
+        
+    }
+    .banner3>.details>h2{
+        font-size: 2rem;
+    }.banner3>.details>p>span{
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .banner3>.details>p{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    form{
+        
+        border: 1px solid white;
+    }
+    form>input{
+        font-size: 2rem;
+    }
+    form>.head{
+        font-size: 2rem;
+    }
+.cmdr{
+    font-size: 2rem;
+        color: #E95420;
+        
+    }
+    .cmd{
+   
+        color: #73ABAD;
+        text-shadow: 0 0 5px #73ABAD;
+    }
+    .text{
+        font-size: 2rem;
+        color: #B89076;
+    }
+    .head{
+        color:#ffffff;
+        font-size: 1.5rem ;
+        font-weight: bolder;
+    }
+    .red{
+       
+        font-size: 1.5rem;
+        color: #E95420;
+    }
+    .red>a{
+        text-decoration: none;
+        color: #519975;
+    }
+    .link{
+        text-decoration: none;
+        color: #519975;
+    }
+    .white{
+        font-size: 1.6rem;
+        color: white;
+    }
+    
+    
+}
+
+@media (max-width: 776px) {
+    .main {
+        width: 50vh;
+        
+    }
+
+    .main>.banner>pre {
+        font-size: 2rem;
+    }
+
+    .banner2>p {
+        font-size: 1.5rem;
+    }
+    .banner3{
+        align-items: center;
+        flex-direction: column;
+        
+    padding: 0px 0px 0px 0px;}
+    .banner3>.ascii{
+        line-height: .9vh;
+        font-size: 1rem;
+    }
+    .banner3>.details{
+        font-size: .5rem;
+        width: 90%;
+        margin-left: 1vw;
+
+        
+    }
+    .banner3>.details>h2{
+        font-size: 2rem;
+    }.banner3>.details>p>span{
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .banner3>.details>p{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    form{
+        
+        border: 1px solid white;
+    }
+    form>input{
+        font-size: 2rem;
+    }
+    form>.head{
+        font-size: 1.5rem;
+    }
+
+    .cmd{
+        color: #73ABAD;
+        text-shadow: 0 0 5px #73ABAD;
+    }
+    .text{
+        color: #B89076;
+    }
+    .head{
+        color:#ffffff;
+        font-size: 1.5rem ;
+        font-weight: bolder;
+    }
+    .red{
+        font-size: 1.5rem;
+        color: #E95420;
+    }
+    .red>a{
+        text-decoration: none;
+        color: #519975;
+    }
+    .link{
+        text-decoration: none;
+        color: #519975;
+    }
+    .white{
+        color: white;
+    }
+    
+}
